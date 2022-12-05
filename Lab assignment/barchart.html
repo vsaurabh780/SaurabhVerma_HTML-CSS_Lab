@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, intial-scale=1.0">
+    <title>
+        VericalBarGraph
+    </title>
+    <style>
+      
+         #s1 article {
+          display: inline-block;
+        
+        } 
+
+        #s1 {
+           background-color: whitesmoke;
+            position: absolute;
+            top: 10%;
+            left: 40%;
+        }
+         p{
+            padding-left: 20px;
+        } 
+
+        div {
+            width: 30px;
+            height: 300px;
+            margin: 20px;
+            background-color: rgb(189, 186, 186);
+        }
+
+        #bar1 {
+            width: 100%;
+            height: 70%;
+            background-color: white;
+            animation-name: gl1;
+            animation-duration: 2s;
+            animation-iteration-count: 1;
+
+        }
+
+        @keyframes gl1 {
+            0% {
+                height: 100%;
+                background-color: white;
+            }
+
+            100% {
+                width: 100%;
+                height: 70%;
+                background-color: white;
+            }
+
+        }
+
+
+        #bar2 {
+            width: 100%;
+            height: 60%;
+            background-color: white;
+            animation-name: gl1;
+            animation-duration: 2s;
+            animation-iteration-count: 1;
+
+        }
+
+        #bar3 {
+            width: 100%;
+            height: 20%;
+            background-color: white;
+            animation-name: gl1;
+            animation-duration: 2s;
+            animation-iteration-count: 1;
+
+        }  
+        #hd1 { padding-left: 70px;}
+    </style>
+</head>
+
+<body>
+    <section id="s1">
+    <article>
+        <div>
+            <article id="bar1">
+            </article>
+        </div>
+        <p>30%</p>
+    </article>
+    <article>
+        <div>
+            <article id="bar2">
+            </article>
+            
+        </div>
+        <p>40%</p>
+    </article>
+    <article>
+        <div>
+            <article id="bar3">
+            </article>  
+        </div>
+        <p>80%</p>
+    </article>
+    <h1 id=hd1>
+        Bar Plot
+    </h1>
+    </section>
+</body>
+
+</html>
